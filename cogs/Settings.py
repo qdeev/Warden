@@ -1,6 +1,6 @@
+from constants import *
 import discord
 from discord.ext import commands
-from constants import *
 
 
 class Settings(commands.Cog):
