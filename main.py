@@ -1,6 +1,7 @@
+from constants import *
+from keep_alive import *
 from discord.ext import commands
 from os import listdir
-from constants import *
 
 
 def get_prefix(clnt, message):
@@ -46,3 +47,5 @@ for filename in listdir("./cogs"):
         client.load_extension(f"cogs.{filename[:-3]}")
 
 client.run(TOKEN)
+# keep_alive()
+# client.run(os.environ.get('TOKEN'), bot=True, reconnect=True)
